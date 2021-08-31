@@ -42,7 +42,7 @@ class _PwdResetState extends State<PwdReset> {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
         home: Scaffold(
-            body: Center(
+            body: SingleChildScrollView(
       child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[

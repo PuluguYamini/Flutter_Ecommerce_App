@@ -9,6 +9,30 @@ class AccountScreen extends StatefulWidget {
 
 class _AccountScreenState extends State<AccountScreen> {
   int _selectedDestination = 0;
+
+  showAlert(BuildContext context) {
+    showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return AlertDialog(
+          content: Text("Are you sure you want to logout?",
+              style: TextStyle(
+                  color: Colors.green,
+                  fontSize: 18.0,
+                  fontWeight: FontWeight.bold)),
+          actions: <Widget>[
+            FlatButton(
+              child: Text("Yes"),
+              onPressed: () {
+                Navigator.push(context,MaterialPageRoute(builder: (_) => LoginPage()));
+              },
+            ),
+          ],
+        );
+      },
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -321,10 +345,7 @@ class _AccountScreenState extends State<AccountScreen> {
               child: Column(children: <Widget>[
                 ElevatedButton(
                 onPressed: () {
-                  Navigator.pushAndRemoveUntil(
-                      context,
-                      MaterialPageRoute(builder: (context) => LoginPage()),
-                          (Route<dynamic> route) => false);
+                  showAlert(context);
                 },
                 style: ElevatedButton.styleFrom(
                   primary: Colors.white,

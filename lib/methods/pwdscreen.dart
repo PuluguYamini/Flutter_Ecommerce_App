@@ -25,7 +25,8 @@ class _PwdScreenState extends State<PwdScreen> {
         debugShowCheckedModeBanner: false,
         home: Scaffold(
         body:
-        Padding(
+            SingleChildScrollView(
+        child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 24),
           child:Form(
             key: formGlobalKey,
@@ -61,7 +62,7 @@ class _PwdScreenState extends State<PwdScreen> {
                     },
                     child: Text("Submit"))
               ],
-            ),
+            )),
           ),
         )));
   }

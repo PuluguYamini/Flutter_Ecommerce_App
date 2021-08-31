@@ -10,6 +10,7 @@ class Women extends StatefulWidget {
 }
 
 class _WomenState extends State<Women> {
+  int _selectedDestination = 0;
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
@@ -77,20 +78,162 @@ class _WomenState extends State<Women> {
                                               builder: (_) => HomeScreen()));
                                     }),
                                 const Text(' \nWomen\n',
-                                    style: TextStyle(fontSize: 25, color: Colors.black54))])),
-          Divider(
-            height: 10,
-            thickness: 1,
-          ),
-          Container(
-              margin: const EdgeInsets.all(20),
-              padding: const EdgeInsets.all(20),
-              decoration: BoxDecoration(
-                  color: Colors.white30,
-                  border: Border.all(color: Colors.black, width: 1),
-                  borderRadius: BorderRadius.circular(12)),
-              child: const Text('Women Section', style: TextStyle(fontSize: 30)),
-              )])))));
+                                    style: TextStyle(fontSize: 20, color: Colors.black54))])),
+                      Divider(
+                        height: 10,
+                        thickness: 1,
+                      ),
+                      Container(
+                          margin: const EdgeInsets.all(20),
+                          padding: const EdgeInsets.all(20),
+                          decoration: BoxDecoration(
+                              color: Colors.white30,
+                              border: Border.all(color: Colors.black, width: 1),
+                              borderRadius: BorderRadius.circular(12)),
+                          child: Column(children: <Widget>[
+                            ListTile(
+                                title: Text('Tops & T-shirts',
+                                    style:
+                                    TextStyle(fontSize: 15, color: Colors.black)),
+                                selected: _selectedDestination == 1,
+                                onTap: () {}),
+                            Divider(
+                              height: 1,
+                              thickness: 1,
+                            ),
+                            ListTile(
+                                title: Text('Dresses',
+                                    style:
+                                    TextStyle(fontSize: 15, color: Colors.black)),
+                                selected: _selectedDestination == 1,
+                                onTap: () {}),
+                            Divider(
+                              height: 1,
+                              thickness: 1,
+                            ),
+                            ListTile(
+                                title: Text('Jeans & Jeggings',
+                                    style:
+                                    TextStyle(fontSize: 15, color: Colors.black)),
+                                selected: _selectedDestination == 2,
+                                onTap: () {}),
+                            Divider(
+                              height: 1,
+                              thickness: 1,
+                            ),
+                            ListTile(
+                                title: Text('Sarees',
+                                    style:
+                                    TextStyle(fontSize: 15, color: Colors.black)),
+                                selected: _selectedDestination == 3,
+                                onTap: () {
+                                }),
+                            Divider(
+                              height: 1,
+                              thickness: 1,
+                            ),
+                            ListTile(
+                                subtitle: Text('Dresses&Jumpsuits, Tops&T-shirts,Shirts,j...',
+                                    style:
+                                    TextStyle(fontSize: 10, color: Colors.grey)),
+                                trailing: Icon(Icons.add),
+                                title: Text('Westrenwear',
+                                    style:
+                                    TextStyle(fontSize: 15, color: Colors.black)),
+                                selected: _selectedDestination == 3,
+                                onTap: () {}
+                                ),
+                            Divider(
+                              height: 1,
+                              thickness: 1,
+                            ),
+                            ListTile(
+                                subtitle: Text('jeans,Trousers,Shorts,Trackpants and Jogg...',
+                                    style:
+                                    TextStyle(fontSize: 10, color: Colors.grey)),
+                                trailing: Icon(Icons.add),
+                                title: Text('Bottomwear',
+                                    style:
+                                    TextStyle(fontSize: 15, color: Colors.black)),
+                                selected: _selectedDestination == 3,
+                                onTap: () {}
+                                ),
+                            Divider(
+                              height: 1,
+                              thickness: 1,
+                            ),
+                            ListTile(
+                                subtitle: Text('Flats,Heels,Casual Shoes,Sports Shoes',
+                                    style:
+                                    TextStyle(fontSize: 10, color: Colors.grey)),
+                                trailing: Icon(Icons.add),
+                                title: Text('Footwear',
+                                    style:
+                                    TextStyle(fontSize: 15, color: Colors.black)),
+                                selected: _selectedDestination == 3,
+                                onTap: () {}
+                            ),
+                            Divider(
+                              height: 1,
+                              thickness: 1,
+                            ),
+                            ListTile(
+                                subtitle: Text('Kurtas&KurtaSets,Nehuru Jackets,Explore...',
+                                    style:
+                                    TextStyle(fontSize: 10, color: Colors.grey)),
+                                trailing: Icon(Icons.add),
+                                title: Text('Ethinicwear',
+                                    style:
+                                    TextStyle(fontSize: 15, color: Colors.black)),
+                                selected: _selectedDestination == 3,
+                                onTap: () {}
+                                ),
+                            Divider(
+                              height: 1,
+                              thickness: 1,
+                            ),
+                            ListTile(
+                                subtitle: Text('Precious Jewellery,Fashion Jewellery,Watch...',
+                                    style:
+                                    TextStyle(fontSize: 10, color: Colors.grey)),
+                                trailing: Icon(Icons.add),
+                                title: Text('Accessiories',
+                                    style:
+                                    TextStyle(fontSize: 15, color: Colors.black)),
+                                selected: _selectedDestination == 3,
+                                onTap: () {}
+                            ),
+                            Divider(
+                              height: 1,
+                              thickness: 1,
+                            ),
+                            ListTile(
+                                subtitle: Text('Bra&Lingerie sets,Panties,Shapewear,S...',
+                                    style:
+                                    TextStyle(fontSize: 10, color: Colors.grey)),
+                                trailing: Icon(Icons.add),
+                                title: Text('Lingerie & Nightwear',
+                                    style:
+                                    TextStyle(fontSize: 15, color: Colors.black)),
+                                selected: _selectedDestination == 3,
+                                onTap: () {}
+                                ),
+                            Divider(
+                              height: 1,
+                              thickness: 1,
+                            ),
+                            ListTile(
+                                subtitle: Text('Avaasa,Indie,Picks,Jaipur Kurti,Indo Era',
+                                    style:
+                                    TextStyle(fontSize: 10, color: Colors.grey)),
+                                trailing: Icon(Icons.add),
+                                title: Text('Brands',
+                                    style:
+                                    TextStyle(fontSize: 15, color: Colors.black)),
+                                selected: _selectedDestination == 3,
+                                onTap: () {}),
+                          ]))
+                    ])))));
   }
 }
 
@@ -102,6 +245,7 @@ class Men extends StatefulWidget {
 }
 
 class _MenState extends State<Men> {
+  int _selectedDestination = 0;
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
@@ -170,19 +314,146 @@ class _MenState extends State<Men> {
                                     }),
                                 const Text(' \nMen\n',
                                     style: TextStyle(fontSize: 25, color: Colors.black54))])),
-                      Divider(
-                        height: 10,
-                        thickness: 1,
-                      ),
                       Container(
-                        margin: const EdgeInsets.all(20),
-                        padding: const EdgeInsets.all(20),
-                        decoration: BoxDecoration(
-                            color: Colors.white30,
-                            border: Border.all(color: Colors.black, width: 1),
-                            borderRadius: BorderRadius.circular(12)),
-                        child: const Text('Men Section', style: TextStyle(fontSize: 30)),
-                      )])))));
+                          margin: const EdgeInsets.all(20),
+                          padding: const EdgeInsets.all(20),
+                          decoration: BoxDecoration(
+                              color: Colors.white30,
+                              border: Border.all(color: Colors.black, width: 1),
+                              borderRadius: BorderRadius.circular(12)),
+                          child: Column(children: <Widget>[
+                            ListTile(
+                                title: Text('Jeans',
+                                    style:
+                                    TextStyle(fontSize: 15, color: Colors.black)),
+                                selected: _selectedDestination == 1,
+                                onTap: () {}),
+                            Divider(
+                              height: 1,
+                              thickness: 1,
+                            ),
+                            ListTile(
+                                title: Text('Trousers&Pants',
+                                    style:
+                                    TextStyle(fontSize: 15, color: Colors.black)),
+                                selected: _selectedDestination == 1,
+                                onTap: () {}),
+                            Divider(
+                              height: 1,
+                              thickness: 1,
+                            ),
+                            ListTile(
+                                title: Text('Sports&Activewear',
+                                    style:
+                                    TextStyle(fontSize: 15, color: Colors.black)),
+                                selected: _selectedDestination == 2,
+                                onTap: () {}),
+                            Divider(
+                              height: 1,
+                              thickness: 1,
+                            ),
+                            ListTile(
+                                subtitle: Text('T-shirts,Shirts,Sweatshirts,jackets',
+                                    style:
+                                    TextStyle(fontSize: 10, color: Colors.grey)),
+                                trailing: Icon(Icons.add),
+                                title: Text('Topwear',
+                                    style:
+                                    TextStyle(fontSize: 15, color: Colors.black)),
+                                selected: _selectedDestination == 3,
+                                onTap: () {
+                                }),
+                            Divider(
+                              height: 1,
+                              thickness: 1,
+                            ),
+                            ListTile(
+                                subtitle: Text('Sneakers,Casual Shoes,Sports Shoes, From...',
+                                    style:
+                                    TextStyle(fontSize: 10, color: Colors.grey)),
+                                trailing: Icon(Icons.add),
+                                title: Text('Footwear',
+                                    style:
+                                    TextStyle(fontSize: 15, color: Colors.black)),
+                                selected: _selectedDestination == 3,
+                                onTap: () {}
+                            ),
+                            Divider(
+                              height: 1,
+                              thickness: 1,
+                            ),
+                            ListTile(
+                                subtitle: Text('jeans,Trousers,Shorts,Trackpants and Jogg...',
+                                    style:
+                                    TextStyle(fontSize: 10, color: Colors.grey)),
+                                trailing: Icon(Icons.add),
+                                title: Text('Bottomwear',
+                                    style:
+                                    TextStyle(fontSize: 15, color: Colors.black)),
+                                selected: _selectedDestination == 3,
+                                onTap: () {}
+                            ),
+                            Divider(
+                              height: 1,
+                              thickness: 1,
+                            ),
+                            ListTile(
+                                subtitle: Text('Sunglasses,Be3lts,Ties,Scraves&Muffers',
+                                    style:
+                                    TextStyle(fontSize: 10, color: Colors.grey)),
+                                trailing: Icon(Icons.add),
+                                title: Text('Accessiories',
+                                    style:
+                                    TextStyle(fontSize: 15, color: Colors.black)),
+                                selected: _selectedDestination == 3,
+                                onTap: () {}
+                            ),
+                            Divider(
+                              height: 1,
+                              thickness: 1,
+                            ),
+                            ListTile(
+                                subtitle: Text('Kurtas&KurtaSets,Nehuru Jackets,Explore...',
+                                    style:
+                                    TextStyle(fontSize: 10, color: Colors.grey)),
+                                trailing: Icon(Icons.add),
+                                title: Text('Ethinicwear',
+                                    style:
+                                    TextStyle(fontSize: 15, color: Colors.black)),
+                                selected: _selectedDestination == 3,
+                                onTap: () {}
+                            ),
+                            Divider(
+                              height: 1,
+                              thickness: 1,
+                            ),
+                            ListTile(
+                                subtitle: Text('Briefs&Trunks,Boxers,Vests,Explore All',
+                                    style:
+                                    TextStyle(fontSize: 10, color: Colors.grey)),
+                                trailing: Icon(Icons.add),
+                                title: Text('Innerwear',
+                                    style:
+                                    TextStyle(fontSize: 15, color: Colors.black)),
+                                selected: _selectedDestination == 3,
+                                onTap: () {}
+                            ),
+                            Divider(
+                              height: 1,
+                              thickness: 1,
+                            ),
+                            ListTile(
+                                subtitle: Text('Nike,Puma,Superdry,Crocs',
+                                    style:
+                                    TextStyle(fontSize: 10, color: Colors.grey)),
+                                trailing: Icon(Icons.add),
+                                title: Text('Brands',
+                                    style:
+                                    TextStyle(fontSize: 15, color: Colors.black)),
+                                selected: _selectedDestination == 3,
+                                onTap: () {}),
+                          ]))
+                    ])))));
   }
 }
 
