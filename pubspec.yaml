@@ -34,6 +34,8 @@ dependencies:
   intl_phone_number_input: ^0.7.0+2
   toggle_switch: ^1.2.0
   carousel_slider: ^4.0.0
+  font_awesome_flutter: ^9.1.0
+  imagebutton: ^0.0.6
 
 dev_dependencies:
   flutter_test:
@@ -53,20 +55,33 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
      - images/ajio.png
-     - images/accessories.jfif
-     - images/beauty.jpg
-     - images/footwear.jfif
-     - images/home.png
-     - images/kidsimg.jfif
-     - images/luxe.png
-     - images/menimg.jfif
-     - images/toys.jfif
-     - images/womenimg.jpg
-     - images/c1.jpg
-     - images/c2.jpg
-     - images/c3.jpg
-     - images/c5.jpg
-     - images/c6.jpg
+     - images/acces.jfif
+     - images/kid.jfif
+     - images/m.jfif
+     - images/mm.jfif
+     - images/w.jfif
+     - images/ca1.jfif
+     - images/ca2.jfif
+     - images/ca3.jfif
+     - images/ca5.jfif
+     - images/ca4.jfif
+     - images/ca6.jfif
+     - images/h.jfif
+     - images/i1.jfif
+     - images/i2.jfif
+     - images/i3.jfif
+     - images/i4.jfif
+     - images/i5.jfif
+     - images/i6.jfif
+     - images/jew.jfif
+     - images/foot.jfif
+     - images/watch.jfif
+     - images/a1.jfif
+     - images/a2.jfif
+     - images/a3.jfif
+     - images/a4.jfif
+     - images/a5.jfif
+     - images/a6.jfif
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

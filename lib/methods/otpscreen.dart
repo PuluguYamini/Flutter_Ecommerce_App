@@ -52,7 +52,7 @@ class _OtpScreenState extends State<OtpScreen> {
                           children: <Widget>[
                 Container(
                   child: const Text('\n\nAJIO\n',
-                      style: TextStyle(fontSize: 30, color: Colors.black54)),
+                      style: TextStyle(fontSize: 30, color: Colors.black54, fontWeight: FontWeight.bold)),
                 ),
                 Padding(
                   padding: const EdgeInsets.only(top: 8.0),
@@ -66,7 +66,7 @@ class _OtpScreenState extends State<OtpScreen> {
                   padding:
                       const EdgeInsets.only(left: 16.0, top: 4.0, right: 16.0),
                   child: Text(
-                    "Please type the verification code sent to",
+                    "Please type the verification code sent.",
                     style: TextStyle(
                         fontSize: 15.0, fontWeight: FontWeight.normal),
                     textAlign: TextAlign.center,

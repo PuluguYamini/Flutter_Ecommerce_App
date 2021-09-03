@@ -39,14 +39,12 @@ class _HomeScreenState extends State<HomeScreen> {
         shape: CircularNotchedRectangle(),
         child: Container(
           height: 50,
-          padding: EdgeInsets.symmetric(horizontal: 20),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-
               // button 1
               IconButton(
-                icon: Icon(Icons.home,
+                icon: Icon(Icons.home, size: 30,
                   color: currentIndex == 0 ? Colors.black : Colors.grey,
                 ),
                 onPressed: () {
@@ -58,7 +56,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
               // button 2
               IconButton(
-                  icon: Icon(Icons.storefront,
+                  icon: Icon(Icons.storefront, size: 30,
                     color: currentIndex == 1 ? Colors.black : Colors.grey,
                   ),
                   onPressed: () {
@@ -68,7 +66,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
               // button 3
               IconButton(
-                  icon: Icon(Icons.person_outline,
+                  icon: Icon(Icons.person_outline, size: 30,
                     color: currentIndex == 2 ? Colors.black : Colors.grey,
                   ),
                   onPressed: () {
@@ -77,7 +75,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
               // button 4
               IconButton(
-                  icon: Icon(Icons.favorite_border,
+                  icon: Icon(Icons.favorite_border, size: 30,
                     color: currentIndex == 3 ? Colors.black : Colors.grey,
                   ),
                   onPressed: () {
@@ -86,7 +84,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
               //button5
               IconButton(
-                  icon: Icon(Icons.shopping_bag,
+                  icon: Icon(Icons.shopping_bag, size: 30,
                     color: currentIndex == 4 ? Colors.black : Colors.grey,
                   ),
                   onPressed: () {
